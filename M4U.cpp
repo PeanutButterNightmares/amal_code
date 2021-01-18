@@ -33,14 +33,14 @@ int main()
     do
     { 
     
-    cout<<"Hello M4U Employee! What would you like to do?\n";
-    cout<<"Type "<<c<<" for selling CD.\n";
-    cout<<"Type "<<d<<" for Selling DVD.\n";
-    cout<<"Type "<<m<<" for Selling magazine\n";
-    cout<<"Type "<<b<<" for Selling book\n";
-    cout<<"Type "<<a<<" for adding item\n";
-    cout<<"Type "<<s<<" for updating stock\n";
-    cout<<"Type "<<r<<" for seeing the sales report\n";
+      std ::cout<<"Hello M4U Employee! What would you like to do?\n";
+      std ::cout<<"Type "<<c<<" for selling CD.\n";
+      std ::cout<<"Type "<<d<<" for Selling DVD.\n";
+      std ::cout<<"Type "<<m<<" for Selling magazine\n";
+      std ::cout<<"Type "<<b<<" for Selling book\n";
+      std ::cout<<"Type "<<a<<" for adding item\n";
+      std ::cout<<"Type "<<s<<" for updating stock\n";
+      std ::cout<<"Type "<<r<<" for seeing the sales report\n";
     
     
     cin>>option;
@@ -62,11 +62,11 @@ int main()
         break;
         default : cout<<"Invalid Input.";
         }
-       cout << "Anything else? (yes/no)\n";
+    std ::cout << "Anything else? (yes/no)\n";
         cin >> calculateagain;
         continue; 
     } while(calculateagain != "no"); 
-    cout<< "Program closed";
+    std ::cout<< "Program closed";
     
    
         return 0;

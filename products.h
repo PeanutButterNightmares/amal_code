@@ -10,7 +10,7 @@ Updated: 17/1/2020
 class Items {
 private:
     int id;
-  std::string title;  //MOVE ALL OF THIS
+  std::string title;
 };
 
 #endif

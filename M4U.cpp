@@ -1,6 +1,14 @@
 #include <iostream>
 #include <string>
 #include <stdlib.h>
+
+/* 
+ M4U.cpp
+ Author: M00734729 <aa4690@live.mdx.ac.uk>
+ Created: 14/01/21 
+ Updated: 17/01/21 
+*/
+
 using namespace std;
 
 class Items {       // The class

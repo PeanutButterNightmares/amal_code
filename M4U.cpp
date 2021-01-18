@@ -1,7 +1,6 @@
 #include <iostream>
 #include <string>
 #include <stdlib.h>
-
 using namespace std;
 
 class Items {       // The class
@@ -19,7 +18,12 @@ int main()
     int b = 4;
     int a = 5;
     int s = 6;
-    int r = 7; 
+    int r = 7;
+    
+   
+   string calculateagain = "yes";
+    do
+    { 
     
     cout<<"Hello M4U Employee! What would you like to do?\n";
     cout<<"Type "<<c<<" for selling CD.\n";
@@ -29,7 +33,8 @@ int main()
     cout<<"Type "<<a<<" for adding item\n";
     cout<<"Type "<<s<<" for updating stock\n";
     cout<<"Type "<<r<<" for seeing the sales report\n";
-       
+    
+    
     cin>>option;
     switch (option)
     { 
@@ -47,7 +52,7 @@ int main()
         break; 
         case 7 : cout<<"This is a quarterly sales report of M4U store: -\n";
         break;
-    default : cout<<"Invalid Input.";
+        default : cout<<"Invalid Input.";
         }
        cout << "Anything else? (yes/no)\n";
         cin >> calculateagain;
@@ -58,3 +63,5 @@ int main()
    
         return 0;
 }
+
+

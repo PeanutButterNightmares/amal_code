@@ -11,12 +11,6 @@
 
 using namespace std;
 
-class Items {       // The class
-  private:             // Access specifier
-    int id;        // Attribute (int variable)
-   std::string title;  // Attribute (string variable)
-};
-
 int main()
 {
     int option;
@@ -32,7 +26,8 @@ int main()
    string calculateagain = "yes";
     do
     { 
-    
+
+      std ::cout<<"___________________________________________________\n";
       std ::cout<<"Hello M4U Employee! What would you like to do?\n";
       std ::cout<<"Type "<<c<<" for selling CD.\n";
       std ::cout<<"Type "<<d<<" for Selling DVD.\n";
@@ -41,7 +36,7 @@ int main()
       std ::cout<<"Type "<<a<<" for adding item\n";
       std ::cout<<"Type "<<s<<" for updating stock\n";
       std ::cout<<"Type "<<r<<" for seeing the sales report\n";
-    
+      std ::cout<<"___________________________________________________\n";
     
     cin>>option;
     switch (option)

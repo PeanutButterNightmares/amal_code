@@ -9,7 +9,6 @@ Created: 19/01/21
 Last Updated: 19/01/21
 */
 
-products::products(){};
 products::products(double cost){
 	this->cost=cost;
 }
@@ -21,13 +20,13 @@ double products::getcost(){
 void products::setcost(double cost){
 	this->cost=cost;
 }
-	
-	Cd::Cd(){}
-	
-Cd::Cd(std::string CdName, std::string singerName, double cost)::products(cost){
+
+
+//CD in this section
+Cd::Cd(std::string CdName, std::string singerName, double cost): products(cost){ //only one colon is needed, not two 
 	this->CdName=CdName;
 	this->singerName=singerName;
-	}
+}
 	
 		
 void Cd::setCdName(std::string CdName){
@@ -37,47 +36,53 @@ void Cd::setCdName(std::string CdName){
 void Cd::setsingerName(std::string singerName){
 	this->singerName=singerName;
 }
-std::string Cd::getName(){
-	return  Cdname;
+std::string Cd::getCdName(){
+	return  CdName;
 	}
 	
-std::string singer::getName(){
+std::string Cd::getSingerName(){
 	return singerName;
 }
 
-	Dvd::Dvd(){}
-Dvd::Dvd(std::string DvdName, double cost)::products(cost){
+
+//DVD in this section
+Dvd::Dvd(std::string DvdName, double cost): products(cost){						//only one colon plis
 	this->DvdName=DvdName;
-	}
+}
 	
 void Dvd::setDvdName(std::string DvdName){
 	this->DvdName=DvdName;
 }
 
-std::string Dvd::getName(){
-	return Dvdname;
-	}
+std::string Dvd::getDvdName(){
+	return DvdName;
+}
 
-Magazine::Magazine (){}
-(std::string MagazineName, double cost)::products(cost){
+
+//Magazine in this section
+Magazine::Magazine(std::string MagazineName, double cost): products(cost){		//colon error here
 	this->MagazineName=MagazineName;
-	}
+}
 
-std::string Magazine::getName(){
-	return Magazinename;
-	}
+void Magazine::setMagazineName(std::string MagazineName){
+	this->MagazineName=MagazineName;
+}
+
+std::string Magazine::getMagazineName(){
+	return MagazineName;
+}
+
 	
-	Book::Book(){}
-	
-Book::Book(std::string BookName, double cost)::products(cost){
+//Book in this section
+Book::Book(std::string BookName, double cost): products(cost){					//last time, colon
 	this->BookName=BookName;
-	}
+}
 		
 void Book::setBookName(std::string BookName){
 	this->BookName=BookName;
 }
 
-std::string Book::getName(){
-	return Bookname;
-	}
+std::string Book::getBookName(){
+	return BookName;
+}
 

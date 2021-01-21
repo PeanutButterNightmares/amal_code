@@ -8,7 +8,7 @@ program: MFU.o products.o
 	$(CC) M4U.o products.o -o program
 
 MFU.o: M4U.cpp
-	$(CC) $(CFLAGS) M4U.cpp
+	$(CC) $(CFLAGS) MFU.cpp
 
 products.o: products.cpp
 	$(CC) $(CFLAGS) products.cpp

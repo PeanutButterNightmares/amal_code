@@ -1,18 +1,27 @@
+#ifndef _ITEM_H_
+#define _ITEM_H_
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <stdlib.h>
+#include "products.h"
+#include <list>
 
-/* 
+/*
  M4U.cpp
  Author: M00734729 <aa4690@live.mdx.ac.uk>
- Created: 14/01/21 
- Updated: 17/01/21 
+ Created: 14/01/21
+ Updated: 17/01/21
 */
-
-using namespace std;
 
 int main()
 {
+	
+  string aa ="No. of Cds sold = 2700\n";
+  string ab ="No. of Dvds sold = 347\n";
+  string ac ="No. of magazines sold = 49\n";
+  string ad ="No. of books sold = 1235\n";
+  
     int option;
     int c = 1;
     int d = 2;
@@ -21,11 +30,12 @@ int main()
     int a = 5;
     int s = 6;
     int r = 7;
-    
-   
+
+
+
    string calculateagain = "yes";
     do
-    { 
+    {
 
       std ::cout<<"___________________________________________________\n";
       std ::cout<<"Hello M4U Employee! What would you like to do?\n";
@@ -37,34 +47,38 @@ int main()
       std ::cout<<"Type "<<s<<" for updating stock\n";
       std ::cout<<"Type "<<r<<" for seeing the sales report\n";
       std ::cout<<"___________________________________________________\n";
-    
-    cin>>option;
+
+        std::cin>>option;
     switch (option)
-    { 
-        case 1 : cout<<"CD Sold.\n";
+    {
+        case 1: std::cout<<"CD Sold.\n";
         break;
-        case 2 : cout<<"DVD Sold.\n";
-        break; 
-        case 3 : cout<<"Magazine Sold.\n";
-        break; 
-        case 4 : cout<<"Book Sold.\n";
+        case 2: std::cout<<"DVD Sold.\n";
         break;
-        case 5 : cout<<"Item added to inventory.\n";
+        case 3: std::cout<<"Magazine Sold.\n";
         break;
-        case 6 : cout<<"Stock Updated!\n";
-        break; 
-        case 7 : cout<<"This is a quarterly sales report of M4U store: -\n";
+        case 4: std::cout<<"Book Sold.\n";
         break;
-        default : cout<<"Invalid Input.";
+        case 5: std::cout<<"Item added to inventory.\n";
+        break;
+        case 6: std::cout<<"Stock Updated!\n";
+        break;
+        case 7: std::cout<<"This is a quarterly sales report of M4U store: -\n";
+	  std::cout<<aa;
+	  std::cout<<ab;
+	  std::cout<<ac;
+	  std::cout<<ad;
+        break;
+        default: std::cout<<"Invalid Input.";
         }
     std ::cout << "Anything else? (yes/no)\n";
-        cin >> calculateagain;
-        continue; 
-    } while(calculateagain != "no"); 
+        std::cin >> calculateagain;
+        continue;
+    } while(calculateagain != "no");
     std ::cout<< "Program closed";
-    
-   
+
+
         return 0;
 }
 
-
+#endif

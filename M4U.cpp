@@ -1,11 +1,7 @@
-#ifndef _ITEM_H_
-#define _ITEM_H_
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <stdlib.h>
 #include "products.h"
-#include <list>
 
 /*
  M4U.cpp
@@ -16,12 +12,12 @@
 
 int main()
 {
-	
-  string aa ="No. of Cds sold = 2700\n";
-  string ab ="No. of Dvds sold = 347\n";
-  string ac ="No. of magazines sold = 49\n";
-  string ad ="No. of books sold = 1235\n";
-  
+
+  std::string aa ="No. of Cds sold = 2700\n";
+  std::string ab ="No. of Dvds sold = 347\n";
+  std::string ac ="No. of magazines sold = 49\n";
+  std::string ad ="No. of books sold = 1235\n";
+
     int option;
     int c = 1;
     int d = 2;
@@ -33,7 +29,7 @@ int main()
 
 
 
-   string calculateagain = "yes";
+   std::string calculateagain = "yes";
     do
     {
 
@@ -42,6 +38,7 @@ int main()
       std ::cout<<"Type "<<c<<" for selling CD.\n";
       std ::cout<<"Type "<<d<<" for Selling DVD.\n";
       std ::cout<<"Type "<<m<<" for Selling magazine\n";
+      std ::cout<<"Type "<<b<<" for Selling book\n";
       std ::cout<<"Type "<<b<<" for Selling book\n";
       std ::cout<<"Type "<<a<<" for adding item\n";
       std ::cout<<"Type "<<s<<" for updating stock\n";
@@ -57,17 +54,18 @@ int main()
         break;
         case 3: std::cout<<"Magazine Sold.\n";
         break;
-        case 4: std::cout<<"Book Sold.\n";
+        case 4: std::cout<<"Book Sold.\n";	
         break;
         case 5: std::cout<<"Item added to inventory.\n";
         break;
         case 6: std::cout<<"Stock Updated!\n";
         break;
-        case 7: std::cout<<"This is a quarterly sales report of M4U store: -\n";
-	  std::cout<<aa;
-	  std::cout<<ab;
-	  std::cout<<ac;
-	  std::cout<<ad;
+        case 7: std::cout<<"This is a quarterly sales report of M4U store: -\n"\
+;
+          std::cout<<aa;
+          std::cout<<ab;
+          std::cout<<ac;
+          std::cout<<ad;
         break;
         default: std::cout<<"Invalid Input.";
         }
@@ -81,4 +79,4 @@ int main()
         return 0;
 }
 
-#endif
+
